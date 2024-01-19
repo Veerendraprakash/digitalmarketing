@@ -1,253 +1,249 @@
-import React from "react"
-
+import React from "react";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
-    <>
-      {/*    <!-- Component: Five Columns Footer with Logo --> */}
-      <footer className="w-full text-slate-500">
-        {/*      <!-- Main footer --> */}
-        <div className="border-t border-slate-200 bg-slate-100 pt-16 pb-12 text-sm">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
-              <div
-                className="col-span-4 md:col-span-8 lg:col-span-4"
-                aria-labelledby="footer-header"
-              >
-                <a
-                  id="WindUI-5-logo"
-                  aria-label="WindUI logo"
-                  aria-current="page"
-                  className="mb-6 flex items-center gap-2 whitespace-nowrap text-base font-medium leading-6 text-slate-700 focus:outline-none"
-                  href="javascript:void(0)"
-                >
-                  <svg
-                    width="300"
-                    height="300"
-                    viewBox="0 0 300 300"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 shrink-0 bg-emerald-500"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M88.1121 88.1134L150.026 150.027L150.027 150.027L150.027 150.027L150.028 150.027L150.027 150.026L88.1133 88.1122L88.1121 88.1134ZM273.878 273.877C272.038 274.974 196.128 319.957 165.52 289.349L88.1124 211.942L26.1434 273.911C26.1434 273.911 -20.3337 196.504 10.651 165.519L88.1121 88.1134L26.1417 26.1433C26.1417 26.1433 69.6778 0.00338007 104.519 0H0V300H300V0H104.533C116.144 0.00112664 126.789 2.90631 134.534 10.651L211.941 88.1123L273.877 26.177C274.974 28.0159 319.957 103.926 289.349 134.535L211.942 211.942L273.878 273.877ZM273.878 273.877L273.912 273.857V273.911L273.878 273.877ZM273.877 26.177L273.911 26.1429H273.857C273.857 26.1429 273.863 26.1544 273.877 26.177Z"
-                      fill="#f1f5f9"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M0 0H300V300H0V0ZM150.026 150.025C121.715 99.731 88.1131 88.1122 88.1131 88.1122L10.6508 165.519C10.6508 165.519 26.143 150.027 150.026 150.027H150.027C150.026 150.027 150.026 150.027 150.026 150.027L150.026 150.027C99.731 178.339 88.1124 211.941 88.1124 211.941L165.52 289.348C165.52 289.348 150.032 273.86 150.027 150.027H150.029C178.341 200.323 211.944 211.942 211.944 211.942L289.352 134.535C289.352 134.535 273.864 150.023 150.027 150.027V150.027L150.027 150.027C200.322 121.715 211.941 88.1125 211.941 88.1125L134.534 10.651C134.534 10.651 150.026 26.1431 150.026 150.025ZM150.027 150.027L150.026 150.027C150.026 150.026 150.026 150.026 150.026 150.025C150.026 150.025 150.027 150.026 150.027 150.027ZM150.027 150.027L150.027 150.026L150.027 150.027C150.027 150.027 150.027 150.027 150.027 150.027L150.027 150.027ZM150.027 150.027C150.027 150.027 150.027 150.027 150.027 150.027H150.027L150.027 150.027Z"
-                      fill="rgba(255, 255, 255, .2)"
-                    />
-                  </svg>
-                  XaVIER
-                </a>
-                <p>
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsam, necessitatibus in beatae quas assumenda nihil sunt laudantium libero autem doloremque, maiores recusandae vitae eaque. In totam sequi saepe nostrum?
-                </p>
-              </div>
-              <nav
-                className="col-span-2 md:col-span-4 lg:col-span-2"
-                aria-labelledby="footer-product-5-logo"
-              >
-                <h3
-                  className="mb-6 text-base font-medium text-slate-700"
-                  id="footer-product-5-logo"
-                >
-                  Product
-                </h3>
-                <ul>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Features
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Customers
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Why us?
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Pricing
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <nav
-                className="col-span-2 md:col-span-4 lg:col-span-2"
-                aria-labelledby="footer-docs-5-logo"
-              >
-                <h3
-                  className="mb-6 text-base font-medium text-slate-700"
-                  id="footer-docs-5-logo"
-                >
-                  Docs & Help
-                </h3>
-                <ul>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Documentation
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Training
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      System status
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      FAQ's
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Help Center
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <nav
-                className="col-span-2 md:col-span-4 lg:col-span-2"
-                aria-labelledby="footer-about-5-logo"
-              >
-                <h3
-                  className="mb-6 text-base font-medium text-slate-700"
-                  id="footer-about-5-logo"
-                >
-                  About us
-                </h3>
-                <ul>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      About us
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Careers
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Leadership
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Blog
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Events
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <nav
-                className="col-span-2 md:col-span-4 lg:col-span-2"
-                aria-labelledby="footer-get-in-touch-5-logo"
-              >
-                <h3
-                  className="mb-6 text-base font-medium text-slate-700"
-                  id="footer-get-in-touch-5-logo"
-                >
-                  Get in touch
-                </h3>
-                <ul>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Contact
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Support
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Partners
-                    </a>
-                  </li>
-                  <li className="mb-2 leading-6">
-                    <a
-                      href="javascript:void(0)"
-                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-                    >
-                      Join research
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+    <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+        <div className="md:max-w-md lg:col-span-2">
+          <Link
+            href="/"
+            aria-label="Go home"
+            title="Company"
+            className="inline-flex items-center"
+          >
+            <svg
+              className="w-8 text-gray-100"
+              viewBox="0 0 24 24"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              stroke="currentColor"
+              fill="none"
+            >
+              <rect x="3" y="1" width="7" height="12" />
+              <rect x="3" y="17" width="7" height="6" />
+              <rect x="14" y="1" width="7" height="6" />
+              <rect x="14" y="11" width="7" height="12" />
+            </svg>
+            <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+              Company
+            </span>
+          </Link>
+          <div className="mt-4 lg:max-w-sm">
+            <p className="text-sm text-gray-100">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+            <p className="mt-4 text-sm text-gray-100">
+              Eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo.
+            </p>
           </div>
         </div>
-      </footer>
-      {/*    <!-- End Five Columns Footer with Logo --> */}
-    </>
-  )
+        <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+          <div>
+            <p className="font-semibold tracking-wide text-gray-100">
+              Category
+            </p>
+            <ul className="mt-2 space-y-2">
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  World
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Games
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  References
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-semibold tracking-wide text-gray-100">
+              Business
+            </p>
+            <ul className="mt-2 space-y-2">
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Web
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  eCommerce
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Business
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Entertainment
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Portfolio
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-semibold tracking-wide text-gray-100">Apples</p>
+            <ul className="mt-2 space-y-2">
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Media
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Brochure
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Nonprofit
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Educational
+                </Link>
+              </li>
+              {/* <li>
+                <Link
+                  href="/"
+                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Projects
+                </Link>
+              </li> */}
+            </ul>
+          </div>
+          {/* <div>
+            <p className="font-semibold tracking-wide text-gray-800">Cherry</p>
+            <ul className="mt-2 space-y-2">
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Infopreneur
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Personal
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Wiki
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                >
+                  Forum
+                </Link>
+              </li>
+            </ul>
+          </div> */}
+        </div>
+      </div>
+      <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
+        <p className="text-sm text-gray-200">
+          © Copyright 2020 Lorem Inc. All rights reserved.
+        </p>
+        <div className="flex items-center mt-4 space-x-4 sm:mt-0">
+          <Link
+            href="/"
+            className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
+              <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z" />
+            </svg>
+          </Link>
+          <Link
+            href="/"
+            className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+          >
+            <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
+              <circle cx="15" cy="15" r="4" />
+              <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
+            </svg>
+          </Link>
+          <Link
+            href="/"
+            className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
+              <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 }
